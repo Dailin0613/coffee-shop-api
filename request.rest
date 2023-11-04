@@ -1,0 +1,59 @@
+//authentication routes
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "name": "Alvaro Carlisle", 
+    "lastname": "Montezuma", 
+    "username": "cubanalvaro", 
+    "email": "alvoro87@gmail.com", 
+    "password": "al87va45ro01" 
+}
+
+###
+POST http://localhost:5000/users/signin
+Content-Type: application/json
+
+{
+    "username": "cubanalvaro", 
+    "password": "al87va45ro01"
+}
+
+###
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "name": "Taylor", 
+    "lastname": "Maede", 
+    "username": "coffe_adict_01", 
+    "email": "taylorm@gmail.com", 
+    "password": "taylor54hg" 
+}
+
+###
+POST http://localhost:5000/users/signin
+Content-Type: application/json
+
+{
+    "username": "coffe_adict_01", 
+    "password": "taylor54hg" 
+}
+
+//products routes
+###
+GET http://localhost:5000/product
+
+
+###
+POST http://localhost:5000/add-new-product
+
+### 
+GET http://localhost:5000/product/English-Scones
+
+###
+PUT http://localhost:5000/update-product/1
+
+###
+DELETE http://localhost:5000/delete-product-name/rose-pistachio-cookies
+
